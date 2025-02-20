@@ -1,0 +1,7 @@
+aws s3 mb s3://new-bucket-name --region eu-central-1  ==> to crate a s3 bucket
+
+aws s3 ls   ==> show all the s3 buckets
+aws s3 ls s3://my-terraform-codes-bucket/ --recursive  ==> show all the folders&files within the bucket 
+
+aws s3 cp s3://my-terraform-codes-bucket/s3/example.txt ./destination-path   ==> copy specific file
+aws s3 cp s3://my-terraform-codes-bucket/s3/ ./destination-path --recursive  ==> copy all files
